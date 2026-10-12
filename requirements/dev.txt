@@ -1,0 +1,3 @@
+# Repository unit tests and AST checks use the Python standard library.
+# Optional critical-error lint used by CI; no formatting/style policy is imposed.
+ruff==0.17.0

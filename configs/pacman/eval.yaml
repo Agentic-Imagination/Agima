@@ -1,0 +1,19 @@
+# Pacman-2D (easy) envfb eval-once config. DISTINCT top-level key (_evalonce) + _val sub-entry so the
+# trainer's --eval_data_dir override never clobbers the train entry (the same-key clobber bug fixed for
+# pushT). Transforms match the train config (256px render).
+vlm_gym_pacman_2d_easy_imagined_cot_interleaved_cot_envfb_evalonce:
+  dataset_names:
+  - vlm_gym_pacman_2d_easy_imagined_cot_val
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 512
+    min_image_size: 256
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 336
+    min_image_size: 224
+  is_mandatory: true
+  num_used_data:
+  - 100
+  use_paraphrases: false
+  weight: 1

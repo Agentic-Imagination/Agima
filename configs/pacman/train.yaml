@@ -1,0 +1,22 @@
+# Pacman-2D (easy) envfb chunk-WM config: SAME task-agnostic envfb loader ('interleaved_cot_envfb')
+# as sokoban/pushT, with pacman-native image transforms (VAE 512/256, ViT 336/224) for the 256px
+# rendered maze (render_size=256, q95 baked into the data). Uses the pacman-registered key for
+# loss-type resolution; the data dir is overridden at train time via --train_data_dir (the
+# pacman_2d_easy_*_chunk_k{K}_{DATE_TAG} set). Difficulty is switched by pointing DATA_ROOT at the
+# hard dataset (transforms are identical since both render at 256).
+vlm_gym_pacman_2d_easy_imagined_cot_interleaved_cot_envfb:
+  dataset_names:
+  - vlm_gym_pacman_2d_easy_imagined_cot_train
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 512
+    min_image_size: 256
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 336
+    min_image_size: 224
+  is_mandatory: true
+  num_used_data:
+  - 100000
+  use_paraphrases: false
+  weight: 1

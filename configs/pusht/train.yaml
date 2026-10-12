@@ -1,0 +1,22 @@
+# PushT envfb chunk-WM config: SAME envfb loader ('interleaved_cot_envfb') as sokoban, but PushT-native
+# image transforms (VAE 256/256, ViT 224/224) for the 96px PushT render — NOT the sokoban 512/256·336/224.
+# (For 96x96 square frames the effective output is identical, but this declares the correct per-task transform
+#  and matches the deployed PushT eval; q90 quality is baked into the PushT source data.)
+# dataset_names keeps the registered sokoban entry only for loss-type resolution; the data dir is overridden
+# at train time via --train_data_dir (the PushT 20260622_perseg set).
+vlm_gym_sokoban_easy_imagined_cot_interleaved_cot_envfb:
+  dataset_names:
+  - vlm_gym_sokoban_easy_imagined_cot_train
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 256
+    min_image_size: 256
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 224
+    min_image_size: 224
+  is_mandatory: true
+  num_used_data:
+  - 100000
+  use_paraphrases: false
+  weight: 1

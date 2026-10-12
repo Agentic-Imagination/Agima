@@ -1,0 +1,81 @@
+{
+  "sources": [
+    {
+      "file": "DiT-CC-BY-NC-4.0.txt",
+      "url": "https://raw.githubusercontent.com/facebookresearch/DiT/main/LICENSE.txt",
+      "sha256": "7c6858d0e71dc8b858255270ad4b5004e80b5b058bf5bbc408a28430d6ddbf4b",
+      "bytes": 19334,
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "file": "InternVL-MIT.txt",
+      "url": "https://raw.githubusercontent.com/OpenGVLab/InternVL/main/LICENSE",
+      "sha256": "8f03d25fbcffafa2254d4d1414bf2a38423a966006b4a6964ee21f728d610bff",
+      "bytes": 1066,
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "file": "Gymnasium-MIT.txt",
+      "url": "https://raw.githubusercontent.com/Farama-Foundation/Gymnasium/v1.1.1/LICENSE",
+      "sha256": "7dacaa9772e856aee6943b32ef663d3634d91d72ec7bbc74d136943673f91e18",
+      "bytes": 1104,
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "file": "Gym-PushT-Apache-2.0.txt",
+      "url": "https://raw.githubusercontent.com/huggingface/gym-pusht/main/LICENSE",
+      "sha256": "87a2e7a1e8568a9bea2f2d5ab8ee1d716faebcc946ddbdaef8da9e655f8b0b9d",
+      "bytes": 12625,
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "file": "Pymunk-MIT.txt",
+      "url": "https://raw.githubusercontent.com/viblo/pymunk/master/LICENSE.txt",
+      "sha256": "6b5cda0a1c589915cd93f79ebe321cb298c554f65d416e28fa1b0619e3bfb107",
+      "bytes": 1084,
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "file": "FLUX-Apache-2.0.txt",
+      "url": "https://raw.githubusercontent.com/black-forest-labs/flux/main/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "file": "Transformers-Apache-2.0.txt",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/main/LICENSE",
+      "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049",
+      "bytes": 11418,
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "file": "Brax-Apache-2.0.txt",
+      "url": "https://raw.githubusercontent.com/google/brax/9d6b7ced2a13da0d074b5e9fbd3aad8311e26997/LICENSE",
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+      "bytes": 11356,
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "file": "Gym-Sokoban-MIT.txt",
+      "url": "https://raw.githubusercontent.com/mpSchrader/gym-sokoban/8e06e44e8bf3bb8bc73eeb1e7f0354508ce3fc89/LICENSE",
+      "sha256": "7e8024a85e0190db92a8f9e40cc62d3effe457c9ade3a3effff986d74bfa1c64",
+      "bytes": 1077,
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "file": "Maze-World-Apache-2.0.txt",
+      "url": "https://raw.githubusercontent.com/koulanurag/maze-world/a080e6d394f75ed6542615dfbe66ca916ffa9a0e/LICENSE",
+      "sha256": "021200cc4156194972134a2508e342264542641cb38bd9bf11adc4d046040e1c",
+      "bytes": 11340,
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "file": "WilsonMazeGenerator-MIT.txt",
+      "url": "https://raw.githubusercontent.com/CaptainFl1nt/WilsonMazeGenerator/c7d9aeabe382a868616c20d4dfad791bdf414152/LICENSE",
+      "sha256": "bcc321df03b366e7f340256aef343096bdc6fcf9c4035276aa284ddf29509abe",
+      "bytes": 1069,
+      "retrieved_on": "2026-10-12"
+    }
+  ]
+}

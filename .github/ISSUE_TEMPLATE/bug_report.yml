@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible problem with installation, data, training, or evaluation.
+body:
+  - type: markdown
+    attributes:
+      value: Do not include credentials, private datasets, or personal machine paths.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+      description: Describe the task, what you expected, and what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Command and traceback
+      description: Provide the smallest reproducing command and complete error. Replace private paths with placeholders.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Code and environment
+      description: Include commit, OS, Python, PyTorch, CUDA, FlashAttention, and GPU model/count where relevant. For documentation issues, a commit or URL is enough.
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Experiment settings
+      description: For model runs, include public model/data revisions, task, variant, K, decoder, and expected episode count. Do not attach private artifacts.

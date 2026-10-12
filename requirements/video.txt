@@ -1,0 +1,4 @@
+# Optional vendored Gymnasium RecordVideo/save_video utilities.
+# MoviePy 2.x requires a newer NumPy than core.txt permits.
+# This compatibility range is not a validated experiment environment.
+moviepy>=1.0.3,<2

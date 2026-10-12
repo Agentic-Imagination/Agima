@@ -1,0 +1,2691 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "repo_id": "novastar111/maze2d_easy_cot_chunk_k10_world_model",
+      "repo_type": "model",
+      "revision": "3234c4474095d02fb26e74d19865b63d21321e54",
+      "task": "maze2d",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "c03c184f42fcfefb5aca2df582dd751222849779ffb2814c96690900f9b02f30"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "c5daa95cf55ddf7484cf330bfc35b408449699db238efb063eea73e9d082f1b6"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "10",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/maze2d_easy_cot_chunk_k3_world_model",
+      "repo_type": "model",
+      "revision": "231f25bfba80be61feaae0040ebced8c7c2acb50",
+      "task": "maze2d",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "85cd2c24e0e0a0d46ece2d8f51cb5f6577ea4d504c21c3b3eb934316c486a492"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "426c02fc800e86cf55ec2c22a8d363d5b74d0dd60396364a86e9878597505af0"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "3",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/maze2d_easy_cot_chunk_k5_world_model",
+      "repo_type": "model",
+      "revision": "db30142e05bd2c206b2151fe096af54010127583",
+      "task": "maze2d",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "6a6663fafd9ec11ab5c995438f30f441885e13d52336bf5c105e2b17e4cf2d73"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "bf0f261d83212f2591f7aa609becc3f3e190e1a23cdf77190d76949f5a1e7d09"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "5",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/maze2d_easy_cot_chunk_kinf_world_model",
+      "repo_type": "model",
+      "revision": "20e4c20e04863b7b32d8cd494f5326bdff5b6a28",
+      "task": "maze2d",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "77bff14edaa6c7830fa8308d38d71363f9872bd97749a61f0ba53e0ec19c2d02"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "3de2fb5186847d287e9054388988939c947d8159c1cd8a6685b8987fc1a00d63"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "inf",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/maze2d_easy_noncot_chunk_k10_world_model",
+      "repo_type": "model",
+      "revision": "c63780f5680e46e20a1285044822860df0e27f63",
+      "task": "maze2d",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "47a05e9be9e5622dbd7f0dc80510df972462bcf56bd1d25a717e61824a767d86"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "6ad8f91fc2382f4d62c14ea8c17765c7b281ea0530f0dc68177d068684c063c1"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "10",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/maze2d_easy_noncot_chunk_k1_world_model",
+      "repo_type": "model",
+      "revision": "85db4b241c357cee5e72cb33114cbfa152e31c1e",
+      "task": "maze2d",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "46d94a209aa3f8cd973e121fe66bfa7ee1eb77745759af6b4e4716f444d9aae9"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "6e412b3b1566b6069492581837e104e4cbe658392f879ed28c3c002ab72d5d72"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "1",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/maze2d_easy_noncot_chunk_k3_world_model",
+      "repo_type": "model",
+      "revision": "881fae8bb66c97ab7a231ca7fdb51cf499e0dd94",
+      "task": "maze2d",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "1f6ceec32bd9cde15f593b50da5c3274411ed0f809b72078f5566ca40755a7ad"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "bffa423cab941f935e675caf4310cbaf967bd06cd470d5899fa50fc949339389"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "3",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/maze2d_easy_noncot_chunk_k5_world_model",
+      "repo_type": "model",
+      "revision": "b92b041eeda871a53bc6f3cd215c1bb253456ba7",
+      "task": "maze2d",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "e17916d32c5cdbe70bdbff0f7e98596b5eaf5040c11d5e2d74ba3d1932699a9a"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "f928b45dd3c3b01c3bb7e36b9f0974a3023436800ee5de79761eb25f36a992e8"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "5",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/maze2d_easy_noncot_chunk_kinf_world_model",
+      "repo_type": "model",
+      "revision": "d9c948ab840b007926a4f04dc47c0784b98cf6bf",
+      "task": "maze2d",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "d55d9c77125184acaafd1463490403719fbba32577b9b57a5e0991e0c3c22029"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "9953a3673b6ef4a7e62226c554e3a21446da5e00187bd8d3ec4bb1aa90317edf"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "inf",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/pacman_braidthin_cot_chunk_k10_world_model",
+      "repo_type": "model",
+      "revision": "e092f34e94acecd71bad2546bcf4b4e8b9810190",
+      "task": "pacman",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "963fc6de16f8e2e53901ea9122e5a8138de170c28eb06485049d225f81908172"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "155e2e64b0f2899e85ea8edee046cff5ab35245b18f486392e5b5daadeca9127"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "10",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/pacman_braidthin_cot_chunk_k3_world_model",
+      "repo_type": "model",
+      "revision": "ed662efc1fc9c0e7f79955e4b2af1ae40f936bac",
+      "task": "pacman",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "cafd0461e1bbb9e0ab83c814b440589315ff6b1c728d81bbc43d8b45a3b4ee31"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "c2a2a9334b9da7da73931163185b50772018f0f01452ba45e30524c1b2e75696"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "3",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/pacman_braidthin_cot_chunk_k5_world_model",
+      "repo_type": "model",
+      "revision": "a639e1ba19eccd6708c160110e77b6445888463a",
+      "task": "pacman",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "2a820144902f0f63fbf7e3eb938c69b901b085847a2955606832df6b89e78b93"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "06794e281acf5c4f8d639ce5463ddc761126c02c3b3a8b210a1afa01de71cb4f"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "5",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/pacman_braidthin_cot_chunk_kinf_world_model",
+      "repo_type": "model",
+      "revision": "12a0c9314cca1c27a229818ca293badc460772de",
+      "task": "pacman",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "94db749c23f31c856224a2dbfdc1524402f3175fc1f65463c8d3bdec70480359"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "692e9449dcbd2c575872dc8d6ace02233e771a306b74b741a2bf59755425943a"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "inf",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/pacman_braidthin_noncot_chunk_k10_world_model",
+      "repo_type": "model",
+      "revision": "e48c4cfe1627b0263d032b80c1876826d92eed96",
+      "task": "pacman",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "ad86686aa642619babc3940c88f96e617eea9e4c11718193c120c0f4c8224b29"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "7a623dbf9ab8d315f7c90ccd35faa2903f5fa6e0076cf12f6c9a6a2c6f41ff6f"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "10",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/pacman_braidthin_noncot_chunk_k1_world_model",
+      "repo_type": "model",
+      "revision": "c3653e5a4752a184899acc58993de1a17025d4f1",
+      "task": "pacman",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "07c7e622664377dfeaf7e9628633026b6691399974a14cfedc304d4c03545439"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "e14877ffbd4620db033666c3b44c1a72cc2b4dd07d1992fe32fdccef57c50a3a"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "1",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/pacman_braidthin_noncot_chunk_k3_world_model",
+      "repo_type": "model",
+      "revision": "3a8455287c7d5c3593c86b00bff0018a8b6a9c1c",
+      "task": "pacman",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "2aab1d3b5fd107e4209a71d4c1496f6ecda0f192427a3b15e02debf7457cc877"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "c8b391f54bdda8123172e2d4efd5ed3a0334a60f8bddd0c3181063b175c6a19c"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "3",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/pacman_braidthin_noncot_chunk_k5_world_model",
+      "repo_type": "model",
+      "revision": "1de20f9f7757c8fad2dbacf1c34ebb7c426220c6",
+      "task": "pacman",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "eab4f6a29b3a906f59d195ee2cdfa0ddc11f5d8fd74e50ff7a39bc8bd18f3ca3"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "929d3c859b74016560a10d6a6d4d56c0a228584c15b6a2571c980818a656c1e4"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "5",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/pacman_braidthin_noncot_chunk_kinf_world_model",
+      "repo_type": "model",
+      "revision": "1fe9408b7f9a7123a247f42d6c6cfffa5ab28ebe",
+      "task": "pacman",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "84cfe110b34a042c4ded39614688aa9230f385cdfd9163f9bf23fe50774a1164"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "8cf39dc821ef3cf2a29cce39b35cf8d5f6fb5330dd1847348cc2a684fdd46db9"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "inf",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "JiaxinGe/pacman_braidthin_forward_v2_cutoff50_kinf_world_model",
+      "repo_type": "model",
+      "revision": "35dd4bfa48a8fbb6e6693fb738b048aba5d55658",
+      "task": "pacman",
+      "category": "Planning",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "4538be2a55e60a406c8a96b6b2d1d2f4eeb7a4aa8c762e90e01e67a9055dd0cf"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "c888efe480525354c2ac770f0a6553085f5b85de2751a8b2ae7d26aa1e1924b4"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/pacman_braidthin_forward_v3_mixed_kinf_world_model",
+      "repo_type": "model",
+      "revision": "ab1884d3285fe91da7db0deb2ef717a28d539bd5",
+      "task": "pacman",
+      "category": "Planning",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "e4ef0a341980502d918beb71bc2046fde0c8e042fa6fde233e1e2802fd07bb1f"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "e0ae8a35c26dbf434f30e2084cbb7cdfaefeed9e23398a87df6a6ff9999abfed"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/pacman_braidthin_forward_v4_shorttrap_only_kinf_world_model",
+      "repo_type": "model",
+      "revision": "5cf58abe00e807c28708fb6dec3de63da589b0b3",
+      "task": "pacman",
+      "category": "Planning",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "2ec63ff1968e6af1b9d3dad36e8720e663e006d5dc3562ef382f02fbd58f3423"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "73e49a4ab750e71a5cce490543b64c0c2d75fd757a4a1455025b324d6f83a19c"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/pacman_braidthin_always_forward_kinf_world_model",
+      "repo_type": "model",
+      "revision": "e278978ea497c6d545113c3edee6ea7bc493decf",
+      "task": "pacman",
+      "category": "Planning",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "1c86322897bd6118d330d77a1f72e55236eb324459ee5ebbc5d5d909afd25688"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "0273fe4eea57fd99d474bad3f76294b226dadd5cca62757ad261a60beb08495d"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/pusht_cot_chunk_k10_world_model",
+      "repo_type": "model",
+      "revision": "b70b5e8dea466f40567e9063a8e901ca20717a01",
+      "task": "pusht",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "0e808c6bfdeaa41e2f76786ca62d179da131941b5175ef5fd73ac215424c7584"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "a825ec4139e69381fbdccec2fb59609760f27d9a666792bdad1d541769345b56"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "10",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/pusht_cot_chunk_k3_world_model",
+      "repo_type": "model",
+      "revision": "d1885dea929433aa8c97dc579376c6a34c604aeb",
+      "task": "pusht",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "695df3f687487500c7a703f33e727562a99f45df53cc041111a9b491201ee8b3"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "af984bc08eba042504967f5da0080fccb6bd81a68d840fb920b74c5cf63aeef2"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "3",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/pusht_cot_chunk_k5_world_model",
+      "repo_type": "model",
+      "revision": "391c75622b2b8e2354123aa147bd80e7bd99b386",
+      "task": "pusht",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "01410c37b1ee15f502853463491181ded49485309f5cadd4910cb63ccf95f4e2"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "5dc254a8d1d1837810d2ab4b6ae7fe8bbdb9264032d6f6b9e1659658146a1360"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "5",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/pusht_cot_chunk_kinf_world_model",
+      "repo_type": "model",
+      "revision": "07bdd17e15fc7ac8937de6694353eefa8d24bae9",
+      "task": "pusht",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "f65ba670897145a41ce0c94c5b87ff3fbe9e9be1ebda9788c690304186f673cb"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "e8b2df321851319af4396ffb05b63de43391451f89774355679cf58abc520936"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "inf",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/pusht_noncot_chunk_k10_world_model",
+      "repo_type": "model",
+      "revision": "3a537a1425165bfd887f291f421af4cd47223caf",
+      "task": "pusht",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "e8804707a3483ef235f6530dfea1839cbbb3f58e33fceac5bf857e9661742421"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "0a30925e068581d2c7d61fb9a75859a94a9e30da2f23e12cf500f2c414e5bbf6"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "10",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/pusht_noncot_chunk_k1_world_model",
+      "repo_type": "model",
+      "revision": "b0d715edf0a25c13600d7c86f56d7944fd7568b4",
+      "task": "pusht",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "8397c668978b5171f9e772540b73df9a4ec1661cf30c951156fafff760cc65f6"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "f1d34af9a0fd0fbe5daa7d5fb76ca3e0fe7f3e564ca803f5f63a6ca8f1a7c0b7"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "1",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/pusht_noncot_chunk_k3_world_model",
+      "repo_type": "model",
+      "revision": "99d9f7dbf7747ab06c9c6c775c49ee90fe08ab1f",
+      "task": "pusht",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "9ed8d4013d683693f759a09c6fb787f74b431e947ce200d240e1a8140ab63b32"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "bbb44b9e32f228ed2cfd2f682890d0e38c9a338867e184f52af60baed6d6b011"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "3",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/pusht_noncot_chunk_k5_world_model",
+      "repo_type": "model",
+      "revision": "b6b82303542475a91d5188dda5c21f4526b8e72d",
+      "task": "pusht",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "cd34d9b4f4f371a888449039ec3ee570ca8ff7beaf640414bf7681e5812038fd"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "0da85455dba23de93a961630830634a3b37010717eaa0cdca49bd3745b4430f7"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "5",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/pusht_singleshot",
+      "repo_type": "model",
+      "revision": "a19674153e5fbe1c5d2b816f6da5d9c9fef94497",
+      "task": "pusht",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "237e2cb782cd06e339ea4f779556ec37331ce6bcd61e27d6835a3e9183964e78"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "ff0cc433afcd358a47f85cc89c67f0c3e71e473a954a2168596c2d2d5386bfb7"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "inf",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/sokoban_easy_cot_chunk_k10_world_model",
+      "repo_type": "model",
+      "revision": "2ce54d2672d40c4277077845f8a529c804b14cb0",
+      "task": "sokoban",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "9984ef1b4e6b06bde6265dcd3acb5bbd6901f1827510a75169dda931beb27ac3"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "db6df4409b0ae515fdbe74126773f323d33e7c64c60a60ea7d3b7ac9e7a41cd4"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "10",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/sokoban_easy_cot_chunk_k3_world_model",
+      "repo_type": "model",
+      "revision": "b8e525e706517c92f7ba914b4e5c03f9491a853d",
+      "task": "sokoban",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "51066c67108ad38b2b272aaef4d5885d98495e3447d5cd39abf59063aa35f9b6"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "44e3fcb80ffa0505a745a9f5a62402afc173ec6c1e145274447eee6d89a01465"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "3",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/sokoban_easy_cot_chunk_k5_world_model",
+      "repo_type": "model",
+      "revision": "887196bd83c0f3ccd1ad99eb6d468148011de327",
+      "task": "sokoban",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "551c1d53029b362e09112b024e0b54812b43cfc98e89dd505a3b669b8b51dc93"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "55357d839ba2eb148994a2ea9962c055ea4eed648b68558daf863c0ab31c642c"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "5",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/sokoban_easy_cot_chunk_kinf_world_model",
+      "repo_type": "model",
+      "revision": "4750d706f82ab88c8c8e22cf66cad4684e99cdc0",
+      "task": "sokoban",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "2cf1b20e25e94277014269a6f2075ba1cf07cd2a736c8d8bbc91ff564841d4ee"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "4d4bf1db3193d7f3d58500f3191ba89e5d2cfedb150e78e4bc93ec718b14810a"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "inf",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/sokoban_easy_noncot_chunk_k10_world_model",
+      "repo_type": "model",
+      "revision": "be4b7e7c12b91b0a2bf5c41df1b08a5d0f980097",
+      "task": "sokoban",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "242ae942c852aa7c6be78c8b6c607ada3beb40a3a6379881f7d618a7a342bfc5"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "c60a3a2a19fed57eedc49f707ee1741be56793aea7491bf4121e747fd0ccf62f"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "10",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/sokoban_easy_noncot_chunk_k1_world_model",
+      "repo_type": "model",
+      "revision": "49d95e9df3ed935d5ded0370fdab3010ea0d1794",
+      "task": "sokoban",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "f76a139623fb765723831fd3e4add0dc8732f048eb0e5b4c7067759cc165f796"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "f1bcbdd4901fbb578cd7974377a1acb14eb036b00d2d73786fbfe1dfa77ee714"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "1",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/sokoban_easy_noncot_chunk_k3_world_model",
+      "repo_type": "model",
+      "revision": "a30942dec40a4bda466d31f3a4701e44c46f7d58",
+      "task": "sokoban",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "545f88e0d1267401722441d7dc68475bed0c5067d9e8f4ca9df3102039731070"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "11ec8684ff65b521e010d4ba6ff955f559c4561d8a1fa48ce70300ad47bd2cef"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "3",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/sokoban_easy_noncot_chunk_k5_world_model",
+      "repo_type": "model",
+      "revision": "b14f57ff51af94b5215b8c3e227687c3f5f40a25",
+      "task": "sokoban",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "3b829c4ce96fcd01adbc5b44570af23f3bb4e058fb1bd7bb250bfc446dfdfb26"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "c8cc7a1fab0d6183fe838ee09b5bf7ed8a011640a6d566ff0fe16f7a6ae09b46"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "5",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/sokoban_easy_noncot_chunk_kinf_world_model",
+      "repo_type": "model",
+      "revision": "13893d9643272dd6aa4221c6e3788daa9a679e82",
+      "task": "sokoban",
+      "category": "Chunk policies",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "b7c6aa9aa9ac7cd367efc295db8b22bd1d54f3c0357f38f7c614d5b1d377deef"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "a44b198e140af8b2ff38a835592fa52b8352804ddc87952120c0b8f80f0793d6"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "inf",
+      "variant": "noncot"
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_sft3k",
+      "repo_type": "model",
+      "revision": "5d357a98c7967903b59e3b2c91fa12353625ee98",
+      "task": "sokoban",
+      "category": "Planning",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "8b98811ad275701580575504bcf23a88f552b54ef9009af50ce6831b190a2e0b"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "ef5a305a63a0d050340707da80ab8c903ebedef29de4b559db1a7fbfd0087eaa"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_sft5k",
+      "repo_type": "model",
+      "revision": "4f3025b0617b983ceda851bcb3b5a7cb7d905533",
+      "task": "sokoban",
+      "category": "Planning",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "20113e727c91ceef34d8bedb9edac5b1ed44e313cb56a302c5e6ae3c3120fd2d"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "c989cf57f1336305ecf71b437595b4ee99da01400ece89ee53d566cdaf8b99be"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_sft3k",
+      "repo_type": "model",
+      "revision": "058af542ffecb3d3ad681b39d3e1b9185cf53f08",
+      "task": "sokoban",
+      "category": "Planning",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "2dad4264dc770a3b64d1cc7d2203e5773eb7ad42fa315719a2561de957d49504"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "355bf6a8f1b90edfbee606b77fb1d9c237a5848af3c78aa1e8f50044668b3708"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_sft5k",
+      "repo_type": "model",
+      "revision": "47b78d5552801650263684b585dde2be99fdac02",
+      "task": "sokoban",
+      "category": "Planning",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "3b81d3ed579a56b980d4360b1e2f486e8e8dedd78a2dadd05b4423aef777f844"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "8238a9180cf094347c365ac483d6ebfa08cd1825d4c6d71068e284ec6f436396"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla_sft3k",
+      "repo_type": "model",
+      "revision": "ec25fc143e2152b9f09ebd350bcd77b7215e10cd",
+      "task": "sokoban",
+      "category": "Planning",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "594eec006dabef7c7e569c19622ed16713fcfedae5d88d5eddab609a2d92b3b9"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "6e7faea0c9101983b1c3aff05160d12faafa46fb35979d72cb6e4bcf064ae649"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_easy_cot_chunk_kinf_branch",
+      "repo_type": "model",
+      "revision": "67b8eea35192bb628e35f73762283cc1f5a4e91a",
+      "task": "sokoban",
+      "category": "Planning",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "021ab03f1e800d7fe922a245e383ee241013d53cd761595f53fc68a781943709"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "2d025fc6301752508a8bfe05b0c42c62bb75a2e974c74be94dd16e9d2d56210d"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "inf",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "novastar111/sokoban_easy_cot_chunk_kinf_compare2",
+      "repo_type": "model",
+      "revision": "e2e8fb48d30ceddaa15199abe5ec56ae85edb23c",
+      "task": "sokoban",
+      "category": "Planning",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "bc13d5bf9f3d13960644fb79154eaa489f88b76a707c5a65ffadf46e1d290b9d"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "1ed4f44fcd8edd40970a2724bfe904978408c88b04210e863bc76cbeb76da608"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ],
+      "chunk_size": "inf",
+      "variant": "cot"
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step10",
+      "repo_type": "model",
+      "revision": "da245a873b0dabe0ab0892e2a82184d9eca2ad73",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "d2b7655c0aef15fcb338f68b1ad7c3a061153d1e48c9692ad4c101601261e83b"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step100",
+      "repo_type": "model",
+      "revision": "03c385d7dd2f50ec2b05a5305a1d3c0aa314a74c",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "292f6098a18fb5e292f54d92405ac35d0d6de8557417eddc32f0a9cd77e39a8a"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step110",
+      "repo_type": "model",
+      "revision": "07f18de9c066e3a228350955acca5e33fd1b3f5f",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "2680cdb6bc533227b342da707996c6e8b3890b0c23a21cb3cbbef3824fb09fc1"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step120",
+      "repo_type": "model",
+      "revision": "a8506bb9b1e5ba2f19221634087c0bd74bee2c67",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "368bf4ae2b37e03435b0a17ae3c4f6333e68d51dfae7104abf90584330384562"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step130",
+      "repo_type": "model",
+      "revision": "ee99836ca572765a6288031d91031a50fbef2392",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "cd56d9e3e20173cc6defcfb68515fe4581fbefd7d8f3ce6aa866066227801083"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step140",
+      "repo_type": "model",
+      "revision": "89c9a5280f627623314f4f6bc7a7feaae6eeed4e",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "c43e13f840efd7c7ba072cb9f93eb67d4c69789965f67c85cded17ce5f7c873e"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step150",
+      "repo_type": "model",
+      "revision": "a66eab4ced59a40c1446c95ea89e11712a921752",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "0b5ae8962c2c595fc0aee3e10470cf4ef80650931e4db3b086653ba36ba01e8f"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step170",
+      "repo_type": "model",
+      "revision": "d86a9ba994ebe0fed97892f02a39dde0a0ccee8c",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "a7e826cfcf2399fa409def0ce3ca61b57f372ca3109304bbc747eb85b0866112"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step180",
+      "repo_type": "model",
+      "revision": "fa67d5c01852bd919ca89ca740ab5aee59c6934b",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "c275de81f4cc38a02997d1baa29f4f90abd7d62bdd39acd910a3590d8385c0ae"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step190",
+      "repo_type": "model",
+      "revision": "cc68ebbf7025102b8e4e27af9b2fe2a08ae593f1",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "15546a77047b757fe2f7b2a6e75905f756e4d18583dd7b58176b3d048a613d62"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step20",
+      "repo_type": "model",
+      "revision": "9f8c4bb5ab3916085482b3e3f87d61414531576f",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "c82fa96eaaf194ed28968f2ce0d6c58ae678157f57a2ee93b301980f4e27019b"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step200",
+      "repo_type": "model",
+      "revision": "de451f642c05188fce799f3ceb00531073e7b8bc",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "23f76c26ac546d0bf4e8a7c606c3fb8a60f8b04d5c4cf9c20a3fb20bde2e837d"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step30",
+      "repo_type": "model",
+      "revision": "0463ddda007278a6a8122ec2a19f4d52ff185662",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "5fe482e9ee2680d737468cf61c70e65ed7ee9b4d2ca15259eec2971980a15ac2"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step40",
+      "repo_type": "model",
+      "revision": "d236aa8e22535d73df1bc8fdc4ab0ed1dbc70c3f",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "2321245ff48c23cf1dc61eb48b9e0d9b78ff396273b644851f193b22f2fcb493"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step50",
+      "repo_type": "model",
+      "revision": "71bbf95dd3caaf81c50b1b03b46268292d9c7a99",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "01383c4d87c31b6e71c758547ec0bc2e74fff391d58826011dfdaf011af2a59e"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step60",
+      "repo_type": "model",
+      "revision": "9bba708e33b30b30f5c5be00cf8a896eea81f050",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "cbd28d8266de0436de32cf5b695da3a594c000d58b5982e0677753d87a9c7b8d"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step70",
+      "repo_type": "model",
+      "revision": "febd57b5b9148c81288a5bb03c7372afab4abec6",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "614ee86c298d8c2c0bcaab6e170edf01e11de8bc95a29ad3f40ca483a3278b61"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step80",
+      "repo_type": "model",
+      "revision": "0cd422f8f254f2c28df2d80eec85bced7ed4db31",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "707cb5a0f858da79c92190148639ab2aa5379e2a0128f819924c3cdea6400c93"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl2box_step90",
+      "repo_type": "model",
+      "revision": "137be3e2a2b91991e54d98adac5e9fa6cf2d9c77",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "00ce975b1b1e57fc86c140dcb821a5fbdb8eff327267b7395f2ac467b86135d6"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl3box_step180",
+      "repo_type": "model",
+      "revision": "af919d3519f070432b217bd671383885c83b0df9",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "73b8770d28644d9735eae4b9cdbe97be73231f261b591f4690c16746ed1ca8ab"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl3box_step190",
+      "repo_type": "model",
+      "revision": "28b04d98dcdd179c76894fd88dec2bc0572b34d7",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "0ffc4d660ae42c498479130860980d1ea9bdfa46aed196fcee158407d35f6859"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_adaptive_vanilla3k_rl3box_step200",
+      "repo_type": "model",
+      "revision": "6127132757b784739ecc9bf5aeaf9c27d6efd572",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "e1681268fb4ac56da7a955f80df1473c1dbd7b3f13ec573ca066c743687a9237"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step10",
+      "repo_type": "model",
+      "revision": "2fa94e56e13f5ea6242525aabbf9714f0b4226ee",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "b04e238b3c3da0927678e0ebf10887105b7163e22ac25a8cfde93609d9f04230"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step100",
+      "repo_type": "model",
+      "revision": "221b192e6378b08ac42222c59f9de11a0d742b66",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "d4f24a296d4e80fe5dfdea8f0cbd726e5a9d82c4cb1a3f05b7051893201333ab"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step110",
+      "repo_type": "model",
+      "revision": "c7cd4a755470395ad8053f7646f780f46b1ec53e",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "33ec1f810dc52fe085731526301f320087d4e16b406431d3cd527cf98b657ad1"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step120",
+      "repo_type": "model",
+      "revision": "0edfadcb566e2bcf3af160ef7dac840ccdf04b43",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "05a2b4745d680ba777ac4492a0c53934a8d367f9af90fd59132d31326a8dd36e"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step130",
+      "repo_type": "model",
+      "revision": "97d6d0326cc051f86dfaa0cbf6d5b291007ecabe",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "f2c0945227faafce142027c39d09b7e3fed62305c1d38f523dafe7bd3cc3d955"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step140",
+      "repo_type": "model",
+      "revision": "03678a97b36e1ed32213c9240dc03a271aae84f4",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "49b807c2ca496031e256e3c6a7e70b1118a1411450f062d7487a36f41d09497a"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step150",
+      "repo_type": "model",
+      "revision": "10918ff6f509d48c50b976c3d2be3fbf3bd1de75",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "d40565e1ba6cab70be1016c364d461b3d297bc195c93c0699876f350d16d2d01"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step160",
+      "repo_type": "model",
+      "revision": "3197068420628d58f996e686caaeb3b2363bd7db",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "c376b98220f3a80437242e8360d1c46bb7a6d25659cd11f9ee46436228feae55"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step170",
+      "repo_type": "model",
+      "revision": "35576f3025c5a72cf4dbcdddf2f28b20ad2fa8fd",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "1b9693f51d2773af6803b0d303ebda60a797a8598b1b62e5d4b52b4af41861b1"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step180",
+      "repo_type": "model",
+      "revision": "9eeeb1651fab81ec57b11f487a251f62fb809e2c",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "4aeaf2d2a64f572f1ab593a7861686912781918b7d9c296598513e8292a5fff2"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step190",
+      "repo_type": "model",
+      "revision": "dcdbd9c490308ce9d517ba7dedcdcba14c59aeab",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "45017e0069acbbc05cbfe0d88a0e5b3bbf1af09827882e76de6afd6a83e36457"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step20",
+      "repo_type": "model",
+      "revision": "11564a8a5e7d2d39df9b2e23c27c8d3a8b471c61",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "f636e931d9aeebc5f38ae40aa2fcacbf16d632c1b19f09d0c9976e01ee208ae4"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step200",
+      "repo_type": "model",
+      "revision": "c7edfa84f99424e8d32630ff7f5e46cecd84ad17",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "b311aa06d1e49bd5a4fbae00d54d606674ba1b485b049fa30ae06d3108c6bfcc"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step30",
+      "repo_type": "model",
+      "revision": "038673a0db32195c81e796e9df84f40ea87d68cf",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "cfa51996d1c812d41949754aa3309a1474274888fadda96d09163d54d6418e96"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step40",
+      "repo_type": "model",
+      "revision": "9f938339a070e14bf6608e1feccb5c37ca46d465",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "370d8329ae31f4a1534c4bb2d335a8a3e2040cf841bd4d4ff6e68321ed31b016"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step50",
+      "repo_type": "model",
+      "revision": "1dddac77ec9b9e90d1b7839d19d7102428e1e90f",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "e278e33109c5546ab3b70df85e6dc666507ff4a4c40b85d22c1e391349f8362b"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step60",
+      "repo_type": "model",
+      "revision": "b698ab06930a78b546488c8de3e06b5f38045b80",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "83ab449564529ff00e7e1c21a5a78464a460e981bce80fa47916cec28b34192b"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step70",
+      "repo_type": "model",
+      "revision": "1964f7e57dd09c6968e8706306aa50746fcd6db6",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "744dbefbc375413d1a397c82fb5866476b00c18238d939ec327686aa6f87c114"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step80",
+      "repo_type": "model",
+      "revision": "7e199e2754e52e8dee475b4fa8a2df5bff44e90e",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "6bdee7e75a70b58c48fb92144f1e19b0eb7b9ec8c2b405a51d92e96cc9141442"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_branch_rl_step90",
+      "repo_type": "model",
+      "revision": "3d8d1615d88eeadfa81900a77924395688e51a33",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "3e7cddd176f7699c3a99dea1f20a55acb64ae5e588de38b6cb9a215144cc85a1"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step10",
+      "repo_type": "model",
+      "revision": "259067105c849dbba574c1b2eb19988aeff5ebcb",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "1c186d7312b72aca237e7afd6e9d8e34aea16a1d2d37de61d6ee128c2aedecb0"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step100",
+      "repo_type": "model",
+      "revision": "e6a364167779a649dd4d29d7cf41f604e4894d0c",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "706853626bdc18fe0afe02250bde6d79a5c5891b90a68c7ef27a007ed88280ad"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step110",
+      "repo_type": "model",
+      "revision": "428fe65592bc8f655dca97524929ed04357271bb",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "4736f32eda1483377adefef86ab25a031eac5a84c590d5ae25a49a7eb7ecef6c"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step120",
+      "repo_type": "model",
+      "revision": "b0bf3858f14f35548413bb658a9f56e17a0f8691",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "8473523a4bfdcde733aeb95e905b9bf38f8391788f18c7893bdad0700ac8dd22"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step130",
+      "repo_type": "model",
+      "revision": "87b5c1435bdf476282d5b91d344bb8639f8e9f10",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "fda9c19b7cd654f92f33855d2ef1094ed1e9b21b84cd3ec2466aab60d78d233d"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step140",
+      "repo_type": "model",
+      "revision": "5a84c7e0fb581c93fce170e1753b76f670b96da7",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "448efda85a91f7b83ac40dca0cdfd8723c2ebb03971b778a2827ff95b130bd42"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step150",
+      "repo_type": "model",
+      "revision": "f29d6f4c58af4f328ff02f13cd84c19cb4b8c3eb",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "ac52979b0bf14ea1d4b8bbfc100a17d41c071e087c5bd10dd988244c4ca7096b"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step160",
+      "repo_type": "model",
+      "revision": "be98db3f71ebc5f1600aefb3e71ab73768586fe0",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "0ed299a1d026b757aa98276fe80306956ad6a79a3af6ecb5aa59d1dab7614801"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step170",
+      "repo_type": "model",
+      "revision": "d66c370b4a72d1743af522d100c408ae840928b8",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "eced14c4666320a3880d06d9baa8b0e4f2d6e61ddaff6a0695c41b507725c6a2"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step180",
+      "repo_type": "model",
+      "revision": "950354925f53a790777a58ff114bc01b10cdc055",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "467e1faeb1b9dd53fbc05ae28b35829874db772f9a9a0bf3bd91063482aec38f"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step190",
+      "repo_type": "model",
+      "revision": "ef20d161d55b272f58bd25edf222c9729a216c66",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "1150093bf8de12b7f48101e41ab525eef7d9ec1e89fe5bfff7e5656276116233"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step20",
+      "repo_type": "model",
+      "revision": "f66c1c21872b3ceebcccec580d422a04ec5afffd",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "9a111bbbb317d54a5e47800552a8debfdc72222fe3e50c7e2761919f975d98a9"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step200",
+      "repo_type": "model",
+      "revision": "493ba60f1945de51a97a8d6a4e01b083cdc7922a",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "cba1bfb66e9ee76680ddb019967c85bbb663b66f65cffa3cb5f98832ac6a8591"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step30",
+      "repo_type": "model",
+      "revision": "e491c675d30e01716e5cc6779acda8adc2e2fa7f",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "985430d7d502800d7ef635e422c0a9d7d90288a5dc8e0958a9522987307f813e"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step40",
+      "repo_type": "model",
+      "revision": "a2e475dfcf2de4357b22437ad634798dadb3bb2b",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "ac02bf7a79c05141d84057ef822a8f24336bf63391115bb08e3fa1838859c50e"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step50",
+      "repo_type": "model",
+      "revision": "c936cc5fdaa375c5dcc9f0557fb9f85c8c7217e2",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "86594a90dba06425166159553eac9393b42dbb6740c1251bb297f5d25737f1e6"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step60",
+      "repo_type": "model",
+      "revision": "060bedfc29b7ae87fafa9550f7d9cd3cbd022d1a",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "40c6e0e6852f8647d97b03fa9014889f83634c9d6758266ae3a1f46ac2f6f089"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step70",
+      "repo_type": "model",
+      "revision": "68ecd8cb4acbfa401fc3542367da44f34d3a62ff",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "c76bbe43e098e58c955e0d980bd3ae8fccc784ae4803d76f4f461d264efa20c3"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step80",
+      "repo_type": "model",
+      "revision": "1e70953584dfd81343294be1508078a641336be0",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "b1f0519b414ca5f3bc33ab90239ca03ec44d6398fdcc70029b8f9eb9f310277e"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_mixed_forward_rl_step90",
+      "repo_type": "model",
+      "revision": "4c81bde01eea8f67e125cb2de17c42c348357114",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "9633f18ee9c953f28740161531e7c4ce8c31d484b03f1790c1542c0fd3d00e78"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step10",
+      "repo_type": "model",
+      "revision": "3dae038cd11e1870ea9a385405a7a6b835d70904",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "4c637580c8e3bed4725040a55cff8b80d267257b6e38576d4118c34902ea54aa"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step100",
+      "repo_type": "model",
+      "revision": "8fbdf014269559a30e7471c2c227ee6ced90d51e",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "f7f1d9eecf0b8e471dbe1c1e890614f1ed82cd7a95448b40be3f137935d5bcaf"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step110",
+      "repo_type": "model",
+      "revision": "f10c522ff318d2b53bbeca35bb3a77298956c9d5",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "e65bcb6ff618dc5110cb0b5fc5ca0d34732c272894229c299b2a919d95df523c"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step120",
+      "repo_type": "model",
+      "revision": "17f6d0d9442073961fffbfb7601ad7651f0aac2b",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "f5adce06829b78fc934055e0d1a58bba03b60ddbbe1f5ad4ecfe08d1dc5cb2b3"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step130",
+      "repo_type": "model",
+      "revision": "434b62a3a5ba26554e596758286588c0f902585f",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "f5ccd55c15833059188d11caf0ae4a23479762af6be13263c58bfd8c7541dd87"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step140",
+      "repo_type": "model",
+      "revision": "c4f6ac76bde9652cec75e44ec7c115872fb89eb0",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "908332b659244a7038097bded6705613537857d2b8d98b64c268773d747a713e"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step150",
+      "repo_type": "model",
+      "revision": "3a6c48a2f3e8b612320a48a9124401a93a43d867",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "5c37978c3dd5194f6e8a60f4626e85e3c48feef59f382974b0076c94989ff28f"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step160",
+      "repo_type": "model",
+      "revision": "6b772386a33634e4bb88194ac264f17cfb16c91c",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "a0e4cf9710beb342c7789cae8a9dc82e0391f514acd8c23d1702e21636270ba7"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step170",
+      "repo_type": "model",
+      "revision": "eb7406ee48dabfc5c73fa15e953c44d5f8ee90df",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "f1cc2d161e5a625d1c38e108d8bc3cafbb2089791b12122ce34bc93fc90c383d"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step20",
+      "repo_type": "model",
+      "revision": "5d6ece679608e7d1c19126bc835ea15465d40992",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "6fe59b93c3c29d09f81a9a6dd462d3113502e9fef5239ddb590124584aeec5e7"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step30",
+      "repo_type": "model",
+      "revision": "027d4b654e933bf4c73507d166049b4307acc520",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "cfa51996d1c812d41949754aa3309a1474274888fadda96d09163d54d6418e96"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step40",
+      "repo_type": "model",
+      "revision": "8d51d021741d9b42da9f7251a1137fe346478131",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "b77dc14ea3ab1c5696eb8cff230377641e677dd1e334c9ff58f86e43e3eeab5c"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step50",
+      "repo_type": "model",
+      "revision": "41ad267064bc4dc6115d6e624c6ba95e44e5dd6d",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "e251cd7429b85d56a603b39f6214023c0f683c2a4059b747e66825c62002488f"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step60",
+      "repo_type": "model",
+      "revision": "d64364e7cd129d46f54ebd286eaa610bd143de0e",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "a98688294dec721f39ce39959e57836acc060b482a83bdb978a9a257a1e6401d"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step70",
+      "repo_type": "model",
+      "revision": "50a286cdd21876587b33eb781979d682f6b4a5ad",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "3425238c9cd80357bccc43ce69a00554ffba63489f941e7e75fca3940d563424"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step80",
+      "repo_type": "model",
+      "revision": "71790724eac59ed78a50af863900b8303874ab01",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "a6ffb59b2a16762da72dce62e372bc28d2685982f84b29e219b39e72584b5e65"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla3k_rl3box_step90",
+      "repo_type": "model",
+      "revision": "c900ddde8806085f6538a3c5712683332809fb3c",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "8447f40d75cac544956b91a82abca4daf8d1e9582a6b9ec00bb057c43ce3aba1"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step10",
+      "repo_type": "model",
+      "revision": "e91810a6f0c8ba08a666beb8e890c3ca08518ce6",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "53396f2d1ae617e9b1aa9b72ce6594dae0e97a46885267849690dc73c5286e3c"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step100",
+      "repo_type": "model",
+      "revision": "5d9ee3621d4a7c498748000b6b1c14daca16c885",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "2162c56820d10ac1273b71eda8a3ccfd495b0f098f2829e8ff5c9d6941c4ec70"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step110",
+      "repo_type": "model",
+      "revision": "147f2829a04abdd031ece6de861ccb330199a3f1",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "8490ca59e813aa4f870ded9c98a7283daf01f3a0f292013b8a45ae1439017f7e"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step120",
+      "repo_type": "model",
+      "revision": "b850625aa679ceff1bbe348d5629750ecf1b9e79",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "897b429f9331373ca2cc031c0464d694e5a5861e1a6b2b5b78b9053c9c536bce"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step130",
+      "repo_type": "model",
+      "revision": "753969e04324662b4a6c05a69de0bc0a51864008",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "d661b3aaa11050af80c5581dcec3578cdfef299f3b84c3ccdb74d4d112c6dfa0"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step140",
+      "repo_type": "model",
+      "revision": "c6ecf298f29634775bd362ff27a8d10aa3230082",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "b9ddb43cd52f494d07e75aa4e97873b1616e65e374f2e1c9ec310e38a7f16605"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step150",
+      "repo_type": "model",
+      "revision": "55d6f02aefe0edc9bcf65b0e50dc888e10b45e12",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "4df393aa24b635f5177eed0bd603b5e9f1d8713f65cd718afd9ac8e6c6a3f21f"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step160",
+      "repo_type": "model",
+      "revision": "1f666a8c4d322ef59ef7af46382fdaa3eb082631",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "7d9f612bc891321118af9b79fb05c681143424bf25ca603b8b45ab36515bb895"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step170",
+      "repo_type": "model",
+      "revision": "f9bb86e7f08a0bc13fa7fda0e970e5af3e476d39",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "50377199071064ac0914f884c212df9c7fae15e40ae847583b8f41a2721807a9"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step180",
+      "repo_type": "model",
+      "revision": "210a223ac4b1ec6f13c7afbe42fce489eed5f23d",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "bd3704b6ed9df3d1447d0ce89afc22d270f89e8c27da20597860be31e27dd73c"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step190",
+      "repo_type": "model",
+      "revision": "b13d70c3d027fb44819fe65b6ee7c9a01c5a9f90",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "a19f1b03327b72c139da82d71b0c98fd0d84dbc8d77a9bb7312954c6923e0d21"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step20",
+      "repo_type": "model",
+      "revision": "b11dea50a2278162b7ee9c995b0cf00f2c40672a",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "f0bb7cd1a4312bd5798486544187d6e68115cb75cacf3f12bde8d33ac8f1384a"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step200",
+      "repo_type": "model",
+      "revision": "884c6b1f778a171f5a55761eff0c6d192c0d5cb1",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "a63cfbf2ef30cf713a8e431150b9a5989f8e3857ddc260aff5ffb776a5a4479f"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step30",
+      "repo_type": "model",
+      "revision": "da55edaa90e38c05d5a8ae345879df1151d26467",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "510427fb211b1ae77ff1caf2953f550c15adfe3d279c0a1c8a461d3961ca38d4"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step40",
+      "repo_type": "model",
+      "revision": "68f86be2011cd296911105438b898287cb43d3ff",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "12970d621330b033e19d98437fb938b639d0cb1fc15050641b9197ebc7b3abdb"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step50",
+      "repo_type": "model",
+      "revision": "bff2f7e83d4891cd77f37f1eef09588dd7a24334",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "a19e21659b59bad123fef3062afc4dffd606afd1796696ca1c8b7976c6f84c08"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step60",
+      "repo_type": "model",
+      "revision": "a8f481b201a54f8f93bbd5dafa3f25c001edbde9",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "156585ab544ecb3465c3f210d693741337e0166971600310fff70ed4b908056f"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step70",
+      "repo_type": "model",
+      "revision": "eb39067257ccab7ffdba155084ff648c13a57217",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "5f912e401542e102576e5298dbbbe58dfbe767c1d9cb1c409c37cb5fb139bb8c"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step80",
+      "repo_type": "model",
+      "revision": "05509cf62ad5465ef2228c9a5ede250267e768a7",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "4aeb9df913beb08fcf357635b73b496d43506f3246ef3fac3653c55f3b46cf44"
+        }
+      ]
+    },
+    {
+      "repo_id": "novastar111/sokoban_adaptive_vanilla5k_rl_step90",
+      "repo_type": "model",
+      "revision": "3e141ca0a89bec50f18fb7fed28557dfdb611036",
+      "task": "sokoban",
+      "category": "Reinforcement learning",
+      "files": [
+        {
+          "path": "ema.safetensors",
+          "size_bytes": 29214685336,
+          "sha256": "ad66994f1b16ed79c91cf0f7a7f6dafb92a0cde28c942dd2ee443ba8f7589e14"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_canonical3k_originaldata_continuation_compute_match_rl100",
+      "repo_type": "model",
+      "revision": "b797880c6e56e401e5f2e54e9300ea55f47f95f5",
+      "task": "sokoban",
+      "category": "SFT controls",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "3280a48e65cf38969bda6e38d0b1578b142e4a4a337f38e86789506b75a853c5"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "6927f2b334f3ef9422ddd2a67002958a49d0458d222451f8d9c8a4146b91990e"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_canonical3k_originaldata_continuation_compute_match_rl150",
+      "repo_type": "model",
+      "revision": "89221cc982fed2ba9d453381f1dc4ea3a7075991",
+      "task": "sokoban",
+      "category": "SFT controls",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "f4eb043d05d34b0f24c1ff414ae2d823b852568bda9983ac40f8595852fc1e5b"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "41aa6e0083c369ecf594c7ed92485349ebe52a89c732b1a861ec73863c6cf79a"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_canonical3k_originaldata_continuation_compute_match_rl200",
+      "repo_type": "model",
+      "revision": "c5434f456cb0aebdc509e3654c66f2ed30770ae5",
+      "task": "sokoban",
+      "category": "SFT controls",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "c59130159143becbe650c25ae2ca0472a68f25e54ef562c8d73bb73faed20a05"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "32901bb68ab1551e6665f12bb60ea5424ec6ebf311b6abbcb3748f795f70af6e"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    },
+    {
+      "repo_id": "JiaxinGe/sokoban_canonical3k_originaldata_continuation_compute_match_rl50",
+      "repo_type": "model",
+      "revision": "043ed50541aef1570a76524a0eae837c06aac16a",
+      "task": "sokoban",
+      "category": "SFT controls",
+      "files": [
+        {
+          "path": "ema-00001-of-00002.safetensors",
+          "size_bytes": 29209180896,
+          "sha256": "e6224a8630709f1c7bd54e801949cb0f40e10802ee6dd4a4fce224cc492f3af6"
+        },
+        {
+          "path": "ema-00002-of-00002.safetensors",
+          "size_bytes": 29220023552,
+          "sha256": "c22b88cb87e15cf8f69cc105120d654cf8e6f85ea7e2ae995c91115299f40c2c"
+        },
+        {
+          "path": "ema.safetensors.index.json",
+          "size_bytes": 116532,
+          "git_blob_sha1": "ee650630504c6ce4cc6786a3b7defa8cd05399f9"
+        }
+      ]
+    }
+  ]
+}

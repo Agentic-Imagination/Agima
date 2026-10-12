@@ -1,0 +1,67 @@
+name: Repository checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  repository:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Check source, assets, and documentation links
+        run: python -B -S tools/check_repo.py
+      - name: Check public launchers and README examples without training dependencies
+        run: python -B -S -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Install critical source checker
+        if: matrix.python-version == '3.10'
+        run: python -m pip install -r requirements/dev.txt
+      - name: Check undefined names and syntax errors
+        if: matrix.python-version == '3.10'
+        run: python -m ruff check --select E9,F821,F822,F823 .
+
+  environments:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.10'
+      - name: Install CPU environment dependencies
+        run: |
+          python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -r requirements/smoke.txt
+      - name: Check simulator reset, render, step, and state restoration
+        env:
+          AGIMA_REQUIRE_ENV_SMOKE: '1'
+          SDL_VIDEODRIVER: dummy
+        run: python -m unittest discover -s tests -p 'test_environments.py' -v
+      - name: Check two-rank training participation with CPU Gloo
+        env:
+          AGIMA_REQUIRE_DISTRIBUTED_SMOKE: '1'
+        run: python -m unittest discover -s tests -p 'test_distributed_training.py' -v
+      - name: Check JPEG subprocess framing and codec selection
+        env:
+          AGIMA_REQUIRE_ENV_SMOKE: '1'
+        run: python -m unittest discover -s tests -p 'test_jpeg_encoder.py' -v

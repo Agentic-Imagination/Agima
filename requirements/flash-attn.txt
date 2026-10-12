@@ -1,0 +1,3 @@
+# Install after core.txt with a compatible CUDA toolkit.
+# python -m pip install --no-build-isolation -r requirements/flash-attn.txt
+flash_attn==2.5.8

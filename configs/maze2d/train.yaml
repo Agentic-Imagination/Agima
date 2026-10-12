@@ -1,0 +1,25 @@
+# Maze2D envfb chunk-WM config: SAME task-agnostic envfb loader ('interleaved_cot_envfb') as the
+# sokoban/pusht chunk studies, with the maze2d-NATIVE image transforms (VAE 256/256, ViT 224/224)
+# matching vlm_gym_maze2d_easy_native256_stopreq_cot_train.yaml and the deployed maze2d_native256
+# eval profile. q95 JPEG quality is baked into the maze2d source data (copied verbatim by the remap).
+# The group key resolves the envfb loader via the auto-generated registry
+# (data/dataset_info.py: task 'maze2d_easy_imagined_cot_v0' x loss 'interleaved_cot_envfb');
+# the actual data dir is overridden at train time via --train_data_dir (the
+# maze2d_{difficulty}_native256_{cot,noncot}_chunk_k{K}_{DATE_TAG} sets). The 'easy' entry is used
+# for loss-type resolution regardless of the trained difficulty (data dir override carries it).
+vlm_gym_maze2d_easy_imagined_cot_interleaved_cot_envfb:
+  dataset_names:
+  - vlm_gym_maze2d_easy_imagined_cot_train
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 256
+    min_image_size: 256
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 224
+    min_image_size: 224
+  is_mandatory: true
+  num_used_data:
+  - 100000
+  use_paraphrases: false
+  weight: 1

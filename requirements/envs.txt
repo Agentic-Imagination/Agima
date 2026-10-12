@@ -1,0 +1,13 @@
+# Dependencies of the vendored Gymnasium and Sokoban, PushT, Maze2D and Pacman.
+# Keep this repository first on PYTHONPATH; it provides its own gymnasium/.
+cloudpickle
+pygame
+# PushT uses Space.on_collision(), introduced in Pymunk 7.
+pymunk>=7.0
+shapely
+
+# The preserved base evaluator imports gymnasium.vlm.vlm and .interactor.
+# These imports are unconditional, including for local BAGEL evaluation.
+openai
+ipywidgets
+IPython
