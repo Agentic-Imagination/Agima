@@ -67,7 +67,7 @@ For PushT, use the paper's final-coverage threshold (strictly > 0.80):
 python scripts/summarize_evaluation.py runs/evaluation --expected-episodes 5 --pusht-success-threshold 0.8
 ```
 
-Results and GIFs are saved in the output directory. Each worker loads a full model. Use a fresh output directory when changing the checkpoint or settings, and pass the test file explicitly.
+For a paper comparison, use `--limit 100` and `--expected-episodes 100`. Results and GIFs are saved in the output directory. Each worker loads a full model. Use a fresh output directory when changing the checkpoint or settings, and pass the test file explicitly.
 
 ## Training
 

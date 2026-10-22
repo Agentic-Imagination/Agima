@@ -42,7 +42,7 @@
 | Sokoban | Deadlock, 2 boxes | [Data](https://huggingface.co/datasets/novastar111/sokoban_eval_2box_tempting_deadlock_100) |
 | Sokoban | Deadlock, 3 boxes | [Data](https://huggingface.co/datasets/novastar111/sokoban_eval_3box_certified_deadlock_100) |
 | Sokoban | Deadlock, 4 boxes | [Data](https://huggingface.co/datasets/novastar111/sokoban_eval_4box_deadlock_100) |
-| Sokoban | Structural Fork, 2 boxes | [Data](https://huggingface.co/datasets/novastar111/sokoban_eval_2box_structural_fork_100) |
+| Sokoban | Structural Fork, 2 boxes | [Data](https://huggingface.co/datasets/JiaxinGe/umw/resolve/b60b69a6e7506c38a980cc1c0beaf96562e7bc2c/eval_sets/sokoban/2box_interior_structural_fork_100/shard_00000.jsonl.gz) |
 | Sokoban | Structural Fork, 3 boxes | [Data](https://huggingface.co/datasets/novastar111/sokoban_eval_3box_structural_fork_100) |
 | Sokoban | Structural Fork, 4 boxes | [Data](https://huggingface.co/datasets/novastar111/sokoban_eval_4box_structural_fork_100) |
 | Maze2D | Hard, fixed start | [Data](https://huggingface.co/datasets/novastar114/maze2d_hard_native256_stepmsg_fixedstart_plain) |

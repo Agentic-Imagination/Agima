@@ -10769,16 +10769,17 @@
       "variant": "noncot"
     },
     {
-      "repo_id": "novastar111/sokoban_eval_2box_structural_fork_100",
+      "repo_id": "JiaxinGe/umw",
       "repo_type": "dataset",
-      "revision": "53411299701f9b3753a782d547280af6e95aef76",
+      "revision": "b60b69a6e7506c38a980cc1c0beaf96562e7bc2c",
       "task": "sokoban",
       "category": "Evaluation",
+      "subset": "2-box Interior Structural Fork (paper 87/93/84)",
       "files": [
         {
-          "path": "shard_00000.jsonl.gz",
-          "size_bytes": 15618,
-          "sha256": "ec83c7190a155757a93fc1db65f75929ef370f8ec643e9c9ffb4408a665a397f"
+          "path": "eval_sets/sokoban/2box_interior_structural_fork_100/shard_00000.jsonl.gz",
+          "size_bytes": 15431,
+          "sha256": "638c6b72cc5b86da7e8e83495427e11114494f388d046a972f8fb40d6110caa5"
         }
       ]
     },

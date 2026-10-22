@@ -14,7 +14,7 @@ Save these files under `experiments/image_ablation/assets/`, using the paths bel
 | Pacman hard | [Test episodes](https://huggingface.co/datasets/novastar111/pacman_eval_hard_braidthin_random100_20260817/resolve/38acbdf956e3ddf271c0e34a91caa6a1b260452b/data/test/batch_000000.jsonl.gz) | `pacman_hard_test.jsonl.gz` |
 | Maze2D hard | [Fixed-start episodes](https://huggingface.co/datasets/novastar114/maze2d_hard_native256_stepmsg_fixedstart_plain/resolve/104c1f0aa4b6d6461a1b22e7448a221d9df4b4ba/testing/shard_00000.jsonl.gz) | `maze_hard_fixedstart/testing/shard_00000.jsonl.gz` |
 
-Only the PushT far evaluation set is included in this release. The paper's PushT in-distribution ablation inputs are excluded; supply the original inputs separately to run its paired analysis. Far results are a different evaluation and cannot replace that paper cell.
+Only PushT FAR is released. The legacy PushT ablation workflow below uses a separate in-distribution pool, which is excluded. Its paired analysis requires separately supplied inputs and has not been verified against the paper's FAR ablation.
 
 ## Run an intervention
 
