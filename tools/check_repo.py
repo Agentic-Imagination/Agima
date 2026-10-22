@@ -160,12 +160,18 @@ def check_markdown_links(root: Path) -> tuple[int, list[str]]:
     return count, sorted(set(errors))
 
 
-def readme_python_commands(root: Path):
+def document_python_commands(root: Path):
+    """Yield the document path, line and command from the public usage pages."""
+    for relative in (Path("README.md"), Path("docs/usage.md")):
+        document = root / relative
+        if document.is_file():
+            for number, command in shell_python_commands(document.read_text(encoding="utf-8")):
+                yield relative, number, command
+
+
+def shell_python_commands(text: str):
     """Read shell-fenced Python commands, including continued lines; never run them."""
-    readme = root / "README.md"
-    if not readme.is_file():
-        return
-    _, blocks = markdown_sections(readme.read_text(encoding="utf-8"))
+    _, blocks = markdown_sections(text)
     for start, language, body in blocks:
         if language not in {"bash", "sh", "shell", "console"}:
             continue
@@ -192,20 +198,21 @@ def readme_python_commands(root: Path):
             yield first, []
 
 
-def check_readme_commands(root: Path) -> tuple[int, list[str]]:
-    """Resolve README Python entrypoints and check local argparse option names."""
+def check_document_commands(root: Path) -> tuple[int, list[str]]:
+    """Resolve documented Python entrypoints and check local argparse option names."""
     errors, count = [], 0
-    for number, command in readme_python_commands(root):
+    for document, number, command in document_python_commands(root):
         count += 1
+        location = f"{document.as_posix()}:{number}"
         if not command:
-            errors.append(f"README.md:{number}: malformed shell command")
+            errors.append(f"{location}: malformed shell command")
             continue
         args = command[1:]
         if not args or args[0] == "-c":
             continue
         if args[0] == "-m":
             if len(args) < 2:
-                errors.append(f"README.md:{number}: missing Python module")
+                errors.append(f"{location}: missing Python module")
                 continue
             module, args = args[1], args[2:]
             if module.split(".")[0] in sys.stdlib_module_names or module == "pip":
@@ -216,12 +223,12 @@ def check_readme_commands(root: Path) -> tuple[int, list[str]]:
         else:
             source, args = root / args[0], args[1:]
         if not source.is_file():
-            errors.append(f"README.md:{number}: missing Python entrypoint {command[1]}")
+            errors.append(f"{location}: missing Python entrypoint {command[1]}")
             continue
         try:
             tree = ast.parse(source.read_bytes())
         except (OSError, SyntaxError, UnicodeError, ValueError) as exc:
-            errors.append(f"README.md:{number}: cannot parse Python entrypoint {command[1]}: {exc}")
+            errors.append(f"{location}: cannot parse Python entrypoint {command[1]}: {exc}")
             continue
         options = {arg.value for node in ast.walk(tree) if isinstance(node, ast.Call)
                    and isinstance(node.func, ast.Attribute) and node.func.attr == "add_argument"
@@ -230,7 +237,7 @@ def check_readme_commands(root: Path) -> tuple[int, list[str]]:
         if options:
             unknown = {arg.split("=", 1)[0] for arg in args if arg.startswith("--")} - options - {"--help"}
             for option in sorted(unknown):
-                errors.append(f"README.md:{number}: unknown option {option} for {source.relative_to(root)}")
+                errors.append(f"{location}: unknown option {option} for {source.relative_to(root)}")
     return count, errors
 
 
@@ -518,14 +525,14 @@ def main() -> int:
     errors.extend(check_assets(ROOT))
     document_count, document_errors = check_markdown_links(ROOT)
     errors.extend(document_errors)
-    command_count, command_errors = check_readme_commands(ROOT)
+    command_count, command_errors = check_document_commands(ROOT)
     errors.extend(command_errors)
     tracked_count, tracked_errors = check_tracked_files(ROOT)
     errors.extend(tracked_errors)
     print(f"Parsed {count} Python source files without importing them.")
     print(f"Checked {license_count} license copies and {config_count} Python configuration references.")
     print(f"Checked text/path hygiene in {text_count} retained text files.")
-    print(f"Checked local links in {document_count} Markdown files and {command_count} README Python commands.")
+    print(f"Checked local links in {document_count} Markdown files and {command_count} documented Python commands.")
     if tracked_count is None:
         print("Tracked-file hygiene skipped: Git checkout unavailable.")
     else:

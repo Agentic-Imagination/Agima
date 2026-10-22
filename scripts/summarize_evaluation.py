@@ -4,6 +4,8 @@
 Success follows the existing current and historical episode schemas. Invalid
 records and conflicting duplicates are reported explicitly and make the command
 fail. Use --expected-episodes to check the intended benchmark denominator.
+For PushT paper metrics, use --pusht-success-threshold 0.8 to score final
+coverage strictly above 0.8 and report mean final coverage.
 """
 
 import argparse
@@ -53,6 +55,22 @@ def validated_success(record):
     return episode_success(record)
 
 
+def validated_pusht_coverage(record):
+    """Read final coverage only; the paper metric has no STOP/success-flag gate."""
+    if not isinstance(record, dict):
+        raise ValueError("episode record must be a JSON object")
+    env_id = record.get("env_id")
+    if not isinstance(env_id, str) or not env_id.startswith("pusht/"):
+        raise ValueError("--pusht-success-threshold requires PushT episode records (env_id pusht/…)")
+    stats = record.get("stats")
+    if not isinstance(stats, dict) or "coverage" not in stats:
+        raise ValueError("PushT episode must include final stats.coverage")
+    coverage = stats["coverage"]
+    if type(coverage) not in (int, float) or not 0 <= coverage <= 1 or not math.isfinite(coverage):
+        raise ValueError("final stats.coverage must be a finite number between 0 and 1")
+    return float(coverage)
+
+
 def read_json(path):
     def unique_keys(pairs):
         result = {}
@@ -75,7 +93,9 @@ def read_json(path):
                       parse_float=finite_float)
 
 
-def retally_run(run_dir: str, expected_episodes=None) -> dict:
+def retally_run(run_dir: str, expected_episodes=None, pusht_success_threshold=None) -> dict:
+    if pusht_success_threshold is not None:
+        pusht_success_threshold = coverage_threshold(pusht_success_threshold)
     root = Path(run_dir)
     by_index = {}
     issues = []
@@ -86,13 +106,18 @@ def retally_run(run_dir: str, expected_episodes=None) -> dict:
     for path in sorted(root.rglob("episode_stats.json")):
         try:
             record = read_json(path)
-            success = validated_success(record)
+            coverage = None
+            if pusht_success_threshold is None:
+                success = validated_success(record)
+            else:
+                coverage = validated_pusht_coverage(record)
+                success = coverage > pusht_success_threshold
             index = record.get("global_index")
             if index is not None and (type(index) is not int or index < 0):
                 raise ValueError("global_index must be a nonnegative integer")
             key = ("index", index) if index is not None else ("path", str(path))
             identity = {field: record.get(field) for field in ("env_id", "seed", "episode_seed")}
-            value = (success, identity)
+            value = (success, identity, coverage)
             if key in by_index:
                 duplicates += 1
                 if by_index[key] != value:
@@ -113,6 +138,12 @@ def retally_run(run_dir: str, expected_episodes=None) -> dict:
         "success_rate": successes / total if total and not issues else None,
         "duplicate_records": duplicates, "issues": issues,
     }
+    if pusht_success_threshold is not None:
+        result.update({
+            "success_metric": "pusht_final_coverage_gt",
+            "pusht_success_threshold": pusht_success_threshold,
+            "mean_final_coverage": sum(value[2] for value in by_index.values()) / total if total else None,
+        })
     summary_path = root / "summary.json"
     if summary_path.exists():
         try:
@@ -131,13 +162,18 @@ def retally_run(run_dir: str, expected_episodes=None) -> dict:
                 issues.append(f"summary.json planned {planned} episodes, found {total} unique records")
             if issues:
                 result["success_rate"] = None
-            result["summary_disagrees"] = (summary.get("successes") != successes or
-                (result["success_rate"] is not None and
-                 not math.isclose(float(summary.get("success_rate") or 0.0), result["success_rate"], abs_tol=1e-6)))
+            # The cached evaluator summary uses its original success predicate.
+            # It cannot be compared with a post-hoc final-coverage threshold.
+            if pusht_success_threshold is None:
+                result["summary_disagrees"] = (summary.get("successes") != successes or
+                    (result["success_rate"] is not None and
+                     not math.isclose(float(summary.get("success_rate") or 0.0), result["success_rate"], abs_tol=1e-6)))
         except (OSError, ValueError, TypeError) as exc:
             result["summary_json"] = "unreadable"
             issues.append(f"summary.json is invalid: {exc}")
             result["success_rate"] = None
+    if pusht_success_threshold is not None and issues:
+        result["mean_final_coverage"] = None
     return result
 
 
@@ -148,10 +184,22 @@ def positive_int(value):
     return value
 
 
+def coverage_threshold(value):
+    try:
+        number = float(value)
+    except (TypeError, ValueError, OverflowError) as exc:
+        raise argparse.ArgumentTypeError("must be a finite number between 0 and 1") from exc
+    if isinstance(value, bool) or not math.isfinite(number) or not 0 <= number <= 1:
+        raise argparse.ArgumentTypeError("must be a finite number between 0 and 1")
+    return number
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("runs", nargs="+", help="Run directories or quoted glob patterns, e.g. 'runs/sokoban-*'.")
     parser.add_argument("--expected-episodes", type=positive_int, help="Required unique episode count for each run.")
+    parser.add_argument("--pusht-success-threshold", type=coverage_threshold,
+                        help="Score PushT by final coverage strictly above this value (paper: 0.8); also report mean final coverage.")
     parser.add_argument("--json", action="store_true", help="Print machine-readable tallies and diagnostics.")
     args = parser.parse_args(argv)
     run_dirs = []
@@ -160,7 +208,8 @@ def main(argv=None):
         if not matches:
             parser.error(f"no run directories matched: {pattern}")
         run_dirs.extend(matches)
-    results = [retally_run(str(path), args.expected_episodes) for path in dict.fromkeys(run_dirs)]
+    results = [retally_run(str(path), args.expected_episodes, args.pusht_success_threshold)
+               for path in dict.fromkeys(run_dirs)]
     if args.json:
         print(json.dumps(results, indent=2, allow_nan=False))
     else:
@@ -168,6 +217,10 @@ def main(argv=None):
         for result in results:
             rate = f"{100 * result['success_rate']:.1f}%" if result["success_rate"] is not None else "INVALID"
             print(f"{result['successes']:>8}/{result['unique_episodes']:<8} {rate:>10}  {result['run']}")
+            if args.pusht_success_threshold is not None:
+                coverage = result["mean_final_coverage"]
+                mean = f"{100 * coverage:.1f}%" if coverage is not None else "INVALID"
+                print(f"  PushT final coverage > {args.pusht_success_threshold:g}; mean final coverage: {mean}")
             if result.get("summary_disagrees"):
                 print("  summary.json disagrees with the unique-episode tally.")
     for result in results:

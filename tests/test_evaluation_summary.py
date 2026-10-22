@@ -130,6 +130,84 @@ class EvaluationSummaryTests(unittest.TestCase):
         self.assertIsNone(result["success_rate"])
         self.assertTrue(any("duplicate JSON key" in issue for issue in result["issues"]))
 
+    def test_pusht_paper_metric_uses_strict_final_coverage_without_stop_gate(self):
+        for index, coverage in enumerate((0.79, 0.80, 0.81, 0.90)):
+            self.record(str(index), global_index=index, env_id="pusht/easy", stats={
+                "coverage": coverage, "success": index < 2,
+                "terminated": False, "truncated": True, "final_action": ["move", [1, 2]],
+            })
+        result = retally_run(str(self.root), expected_episodes=4, pusht_success_threshold=0.8)
+        self.assertEqual((result["successes"], result["success_rate"]), (2, 0.5))
+        self.assertAlmostEqual(result["mean_final_coverage"], 0.825)
+        self.assertEqual(result["success_metric"], "pusht_final_coverage_gt")
+        self.assertEqual(result["pusht_success_threshold"], 0.8)
+        self.assertEqual(result["issues"], [])
+
+    def test_pusht_scoring_rejects_other_tasks_and_missing_or_invalid_coverage(self):
+        records = [
+            {"env_id": "sokoban/easy", "stats": {"coverage": 0.9}},
+            {"stats": {"coverage": 0.9}},
+            {"env_id": "pusht/easy", "stats": {}},
+            *({"env_id": "pusht/easy", "stats": {"coverage": value}}
+              for value in (None, True, "0.9", -0.1, 1.1, float("nan"), 10 ** 400)),
+        ]
+        for index, record in enumerate(records):
+            self.record(str(index), **record)
+        result = retally_run(str(self.root), pusht_success_threshold=0.8)
+        self.assertEqual(result["unique_episodes"], 0)
+        self.assertIsNone(result["success_rate"])
+        self.assertIsNone(result["mean_final_coverage"])
+        self.assertEqual(len(result["issues"]), len(records) + 1)
+
+    def test_pusht_duplicates_require_matching_final_coverage(self):
+        self.record("first", global_index=0, env_id="pusht/easy", stats={"coverage": 0.9})
+        self.record("duplicate", global_index=0, env_id="pusht/easy", stats={"coverage": 0.9})
+        result = retally_run(str(self.root), expected_episodes=1, pusht_success_threshold=0.8)
+        self.assertEqual((result["unique_episodes"], result["duplicate_records"]), (1, 1))
+        self.assertEqual(result["mean_final_coverage"], 0.9)
+        self.record("conflict", global_index=0, env_id="pusht/easy", stats={"coverage": 0.95})
+        result = retally_run(str(self.root), pusht_success_threshold=0.8)
+        self.assertIsNone(result["success_rate"])
+        self.assertIsNone(result["mean_final_coverage"])
+        self.assertTrue(any("conflicting records" in issue for issue in result["issues"]))
+
+    def test_pusht_summary_checks_completeness_without_comparing_different_metrics(self):
+        self.record("valid", global_index=0, env_id="pusht/easy", stats={"success": False, "coverage": 0.85})
+        summary = {"episodes": 1, "errors": 0, "successes": 0, "success_rate": 0.0}
+        (self.root / "summary.json").write_text(json.dumps(summary))
+        result = retally_run(str(self.root), pusht_success_threshold=0.8)
+        self.assertEqual(result["success_rate"], 1.0)
+        self.assertNotIn("summary_disagrees", result)
+        self.assertEqual(result["issues"], [])
+        legacy = retally_run(str(self.root))
+        self.assertEqual(legacy["success_rate"], 0.0)
+        self.assertNotIn("mean_final_coverage", legacy)
+        summary.update(episodes=2, errors=1)
+        (self.root / "summary.json").write_text(json.dumps(summary))
+        result = retally_run(str(self.root), pusht_success_threshold=0.8)
+        self.assertIsNone(result["success_rate"])
+        self.assertIsNone(result["mean_final_coverage"])
+        self.assertTrue(any("episode errors" in issue for issue in result["issues"]))
+
+    def test_pusht_cli_validates_threshold_and_prints_paper_metrics(self):
+        self.record("valid", env_id="pusht/easy", stats={"coverage": 0.85})
+        for threshold in ("NaN", "inf", "-0.1", "1.1", "invalid"):
+            with self.subTest(threshold=threshold):
+                with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as exc:
+                    main([str(self.root), "--pusht-success-threshold", threshold])
+                self.assertEqual(exc.exception.code, 2)
+        stdout = io.StringIO()
+        with contextlib.redirect_stdout(stdout):
+            self.assertEqual(main([str(self.root), "--pusht-success-threshold", "0.8"]), 0)
+        self.assertIn("100.0%", stdout.getvalue())
+        self.assertIn("final coverage > 0.8; mean final coverage: 85.0%", stdout.getvalue())
+
+    def test_pusht_incomplete_denominator_suppresses_mean_coverage_as_well_as_rate(self):
+        self.record("valid", global_index=0, env_id="pusht/easy", stats={"coverage": 0.85})
+        result = retally_run(str(self.root), expected_episodes=2, pusht_success_threshold=0.8)
+        self.assertIsNone(result["success_rate"])
+        self.assertIsNone(result["mean_final_coverage"])
+
 
 if __name__ == "__main__":
     unittest.main()

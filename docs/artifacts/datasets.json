@@ -461,62 +461,6 @@
       "variant": "noncot"
     },
     {
-      "repo_id": "novastar111/maze2d_easy_cot_ordered",
-      "repo_type": "dataset",
-      "revision": "2c3ac2e284b81a43ba253b71cbcd3a73369ca6ed",
-      "task": "maze2d",
-      "category": "Evaluation",
-      "files": [
-        {
-          "path": "testing/shard_00000.jsonl.gz",
-          "size_bytes": 4221799,
-          "sha256": "8029734b5ac9f30949ccffae9f364ece797499a0909e00a7e056f566783e7679"
-        }
-      ]
-    },
-    {
-      "repo_id": "novastar111/maze2d_easy_plain_ordered",
-      "repo_type": "dataset",
-      "revision": "f44cc355cd27e68cf7860cb465eb2361ea95c183",
-      "task": "maze2d",
-      "category": "Evaluation",
-      "files": [
-        {
-          "path": "testing/shard_00000.jsonl.gz",
-          "size_bytes": 5188514,
-          "sha256": "843bab165548d43ed56e7a33f682e3920785efc19a5e7d15a04c229f520e11f7"
-        }
-      ]
-    },
-    {
-      "repo_id": "novastar111/maze2d_hard_cot_ordered",
-      "repo_type": "dataset",
-      "revision": "28877d37d1d652aad51875f66af2b90b3ae32feb",
-      "task": "maze2d",
-      "category": "Evaluation",
-      "files": [
-        {
-          "path": "testing/shard_00000.jsonl.gz",
-          "size_bytes": 8520272,
-          "sha256": "3f699d7ef8f420de8287ab3ed91291ed45308868738e8da32e86747c210a28a7"
-        }
-      ]
-    },
-    {
-      "repo_id": "novastar111/maze2d_hard_plain_ordered",
-      "repo_type": "dataset",
-      "revision": "90c0e70c28a231dac6ad148509fad81dcf686d1d",
-      "task": "maze2d",
-      "category": "Evaluation",
-      "files": [
-        {
-          "path": "testing/shard_00000.jsonl.gz",
-          "size_bytes": 11099196,
-          "sha256": "38cc2d2f10d00418b8cf1d4b2c9126170c29bffe1e3ff929b40daae44862bc01"
-        }
-      ]
-    },
-    {
       "repo_id": "novastar114/maze2d_hard_native256_stepmsg_fixedstart_plain",
       "repo_type": "dataset",
       "revision": "104c1f0aa4b6d6461a1b22e7448a221d9df4b4ba",
@@ -1034,62 +978,6 @@
       ]
     },
     {
-      "repo_id": "novastar111/pacman_eval_easy_braidthin_random100_v1_20260820",
-      "repo_type": "dataset",
-      "revision": "550d58c1652ab4d0f60da5ecac8e0ec44b10a314",
-      "task": "pacman",
-      "category": "Evaluation",
-      "files": [
-        {
-          "path": "data/test/batch_000000.jsonl.gz",
-          "size_bytes": 26990245,
-          "sha256": "788d71aeb295e3a54ddfca870d8c7c720f59185c43ff21a3105cdc6ecf8d52b0"
-        }
-      ]
-    },
-    {
-      "repo_id": "novastar111/pacman_eval_easy_braidthin_stratified100_v2_20260820",
-      "repo_type": "dataset",
-      "revision": "1acc815821eebf7663895c836d7a6f2df95fc50c",
-      "task": "pacman",
-      "category": "Evaluation",
-      "files": [
-        {
-          "path": "data/test/batch_000000.jsonl.gz",
-          "size_bytes": 27094768,
-          "sha256": "eadbf33add24bb2e550456a4ad7141e5c111bb32e779df646087533adedd7220"
-        }
-      ]
-    },
-    {
-      "repo_id": "novastar111/pacman_eval_forward_stress_g12_random100_20260818",
-      "repo_type": "dataset",
-      "revision": "9860d53703d79333d37d01f0d87258ea024860cc",
-      "task": "pacman",
-      "category": "Evaluation",
-      "files": [
-        {
-          "path": "data/test/batch_000000.jsonl.gz",
-          "size_bytes": 26336494,
-          "sha256": "8118f7b275d345a1a6558df4f53c6de3382b23d8c663ebd112660e52219a6051"
-        }
-      ]
-    },
-    {
-      "repo_id": "novastar111/pacman_eval_forward_stress_g8_random100_20260818",
-      "repo_type": "dataset",
-      "revision": "010f1f0e5161ad528e92c13006d2d03871f39ed5",
-      "task": "pacman",
-      "category": "Evaluation",
-      "files": [
-        {
-          "path": "data/test/batch_000000.jsonl.gz",
-          "size_bytes": 12331701,
-          "sha256": "5044700e1e317981e889a34936593e8d95f431fa34e0e95705b1cc758168a4c6"
-        }
-      ]
-    },
-    {
       "repo_id": "novastar111/pacman_eval_hard_braidthin_random100_20260817",
       "repo_type": "dataset",
       "revision": "24dd17f2e90af2b503ac694a12c6f52012b46365",
@@ -1100,20 +988,6 @@
           "path": "data/test/batch_000000.jsonl.gz",
           "size_bytes": 41457885,
           "sha256": "9a98fa58b2466beead45acc876a28ee2b0ae258a9be3f77bcf4f3c190e6c6a16"
-        }
-      ]
-    },
-    {
-      "repo_id": "novastar111/pacman_eval_two_ghost_braidthin_random100_20260817",
-      "repo_type": "dataset",
-      "revision": "b7997c91e1948be432d0bebf73c943129caf9627",
-      "task": "pacman",
-      "category": "Evaluation",
-      "files": [
-        {
-          "path": "data/test/batch_000000.jsonl.gz",
-          "size_bytes": 39773432,
-          "sha256": "fbaf50a9a9799384b2cc1daf5c4c5c7e81c3fed8a23b01cc3b5b53747f3ed034"
         }
       ]
     },
@@ -9527,20 +9401,6 @@
       ]
     },
     {
-      "repo_id": "novastar111/pusht_eval_in_dist_balanced100_20260820",
-      "repo_type": "dataset",
-      "revision": "005975b67e84e2b6a00d46dad0eba6e12fd25434",
-      "task": "pusht",
-      "category": "Evaluation",
-      "files": [
-        {
-          "path": "data/test/batch_000000.jsonl.gz",
-          "size_bytes": 1818226,
-          "sha256": "3b3be6ae9c2a95e14590b5148fe155a3d5524f8b277a5b15945ac596cfc48cfe"
-        }
-      ]
-    },
-    {
       "repo_id": "novastar111/pusht_diverse_train",
       "repo_type": "dataset",
       "revision": "2d9814f8b50dff17809186c4086e85259bbd2aca",
@@ -10907,20 +10767,6 @@
       ],
       "chunk_size": "inf",
       "variant": "noncot"
-    },
-    {
-      "repo_id": "novastar111/sokoban_easy_eval_100_20260712",
-      "repo_type": "dataset",
-      "revision": "9860fcddf2cbcc01536fde21c94aab8402edc8c1",
-      "task": "sokoban",
-      "category": "Evaluation",
-      "files": [
-        {
-          "path": "data/test/batch_000000.jsonl.gz",
-          "size_bytes": 91514264,
-          "sha256": "235754d970ad40b97f0469f7a9217922a1b6e4cd7c69735f9f0855b4a7b9ea41"
-        }
-      ]
     },
     {
       "repo_id": "novastar111/sokoban_eval_2box_structural_fork_100",

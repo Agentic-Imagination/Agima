@@ -47,7 +47,7 @@ class DocumentationTests(unittest.TestCase):
                              (3, "undefined Markdown link reference")):
             self.assertTrue(any(f"docs/guide.md:{line}: {reason}" in error for error in errors), errors)
 
-    def test_readme_entrypoints_and_option_names_are_checked_without_execution(self):
+    def test_documented_entrypoints_and_option_names_are_checked_without_execution(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "launcher.py").write_text(
@@ -58,29 +58,55 @@ class DocumentationTests(unittest.TestCase):
                 "```bash\npython3 launcher.py --dry-run\n"
                 "python3 removed.py --help\npython3 launcher.py --typo\n```\n"
             )
-            count, errors = CHECKS.check_readme_commands(root)
+            count, errors = CHECKS.check_document_commands(root)
         self.assertEqual(count, 3)
         self.assertEqual(len(errors), 2)
         self.assertTrue(any("missing Python entrypoint removed.py" in error for error in errors))
         self.assertTrue(any("unknown option --typo" in error for error in errors))
 
-    def test_readme_help_and_dry_run_examples_work_without_site_packages(self):
-        checked = []
+    def test_usage_commands_resolve_from_repository_root_and_report_the_document(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "docs").mkdir()
+            (root / "scripts").mkdir()
+            (root / "scripts/launcher.py").write_text(
+                "raise RuntimeError('must not execute during static checks')\n"
+                "parser.add_argument('--task')\nparser.add_argument('--chunk-size')\n"
+            )
+            (root / "README.md").write_text("# Project\n\n[Usage](docs/usage.md)\n")
+            (root / "docs/usage.md").write_text(
+                "```bash\n"
+                'python scripts/launcher.py --task "${TASK}" \\\n'
+                '  --chunk-size "${K}"\n'
+                "python scripts/missing.py --help\n"
+                "python scripts/launcher.py --typo\n```\n"
+            )
+            count, errors = CHECKS.check_document_commands(root)
+        self.assertEqual(count, 3)
+        self.assertEqual(errors, [
+            "docs/usage.md:4: missing Python entrypoint scripts/missing.py",
+            "docs/usage.md:5: unknown option --typo for scripts/launcher.py",
+        ])
+
+    def test_usage_help_examples_work_without_site_packages(self):
+        checked = set()
         allowed = {"scripts/train.py", "scripts/evaluate.py"}
-        for line, command in CHECKS.readme_python_commands(ROOT):
+        for document, line, command in CHECKS.document_python_commands(ROOT):
+            if document != Path("docs/usage.md"):
+                continue
             if len(command) < 2 or command[1] not in allowed:
                 continue
-            if not {"--help", "--dry-run"}.intersection(command[2:]):
-                continue  # Real training/download/install commands are never executed.
-            with self.subTest(line=line, entrypoint=command[1]):
+            if command[2:] != ["--help"]:
+                continue  # Parameterized commands and GPU workloads are never executed.
+            with self.subTest(document=document, line=line, entrypoint=command[1]):
                 result = subprocess.run(
                     [sys.executable, "-B", "-S", str(ROOT / command[1]), *command[2:]],
                     cwd=ROOT, capture_output=True, text=True, timeout=15,
                 )
                 self.assertEqual(result.returncode, 0, result.stderr)
-                self.assertIn("usage:" if "--help" in command else "Dry run:", result.stdout)
-                checked.append(line)
-        self.assertTrue(checked, "README should include an executable --help or --dry-run launcher example")
+                self.assertIn("usage:", result.stdout)
+                checked.add(command[1])
+        self.assertEqual(checked, allowed, "Usage should include --help examples for both launchers")
 
     def test_broken_documented_entrypoint_is_reported_without_aborting_other_checks(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -89,7 +115,7 @@ class DocumentationTests(unittest.TestCase):
             (root / "README.md").write_text(
                 "```bash\npython broken.py --help\npython missing.py --help\n```\n"
             )
-            count, errors = CHECKS.check_readme_commands(root)
+            count, errors = CHECKS.check_document_commands(root)
         self.assertEqual(count, 2)
         self.assertEqual(len(errors), 2)
         self.assertIn("cannot parse Python entrypoint broken.py", errors[0])

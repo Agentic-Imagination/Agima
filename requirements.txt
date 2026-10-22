@@ -1,4 +1,4 @@
 # Default training/inference and Sokoban, PushT, Maze2D and Pacman environment dependencies.
-# Install FlashAttention separately after PyTorch; see requirements/README.md.
+# Install FlashAttention separately after PyTorch; see docs/usage.md.
 -r requirements/core.txt
 -r requirements/envs.txt
