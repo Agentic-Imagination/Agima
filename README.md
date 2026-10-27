@@ -2,7 +2,7 @@
   <a href="https://agima.net/"><img src="docs/assets/agima.svg" width="80" height="80" alt="Agima logo"></a>
 </p>
 
-<h1 align="center">Training an Imaginative Agent</h1>
+<h1 align="center">Train an Imaginative Agent</h1>
 
 <p align="center">
   <a href="https://gejiaxin.org/">Jiaxin Ge</a><sup>1,*</sup> &nbsp;
